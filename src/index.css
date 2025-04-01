@@ -1,0 +1,29 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@media print {
+  @page {
+    margin: 1cm;
+  }
+
+  body {
+    background: white;
+  }
+
+  .print\:hidden {
+    display: none;
+  }
+
+  .bg-red-600 {
+    background-color: transparent !important;
+  }
+
+  .text-white {
+    color: #000 !important;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+}
